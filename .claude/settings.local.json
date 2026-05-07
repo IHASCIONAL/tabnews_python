@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(cd \"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Documentos\\\\projetos\\\\tabnews_python\"; Get-ChildItem -Recurse | Select-Object -Property @{Name=\"Path\";Expression={$_.FullName.Replace\\(\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Documentos\\\\projetos\\\\tabnews_python\\\\\", \"\"\\)}}, PSIsContainer | Format-Table -AutoSize)",
+      "PowerShell(cd \"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Documentos\\\\projetos\\\\tabnews_python\"; Get-ChildItem -Path . -Recurse -Depth 3 | Where-Object {$_.PSIsContainer -or $_.Extension -eq \".py\"} | Select-Object @{Name=\"Relative\";Expression={$_.FullName.Replace\\(\"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Documentos\\\\projetos\\\\tabnews_python\\\\\", \"\"\\)}} | Sort-Object)",
+      "Bash(Get-ChildItem -Recurse -Force -Directory -Filter \".claude\" \"C:\\\\Users\\\\DELL\\\\OneDrive\\\\Documentos\\\\projetos\\\\tabnews_python\")",
+      "Bash(Select-Object FullName)",
+      "Bash(mv /c/Users/DELL/OneDrive/Documentos/projetos/tabnews_python/pages/api/v1/status/.claude/settings.local.json /c/Users/DELL/OneDrive/Documentos/projetos/tabnews_python/.claude/settings.local.json)",
+      "Bash(rm -rf /c/Users/DELL/OneDrive/Documentos/projetos/tabnews_python/pages/api/v1/status/.claude)",
+      "Bash(mkdir -p /c/Users/DELL/OneDrive/Documentos/projetos/tabnews_python/.claude)"
+    ]
+  }
+}
