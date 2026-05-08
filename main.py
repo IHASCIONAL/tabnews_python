@@ -1,4 +1,9 @@
+from pathlib import Path
+
+from dotenv import load_dotenv
 from flask import Flask
+
+load_dotenv(Path(__file__).parent / ".env")
 
 from pages.api.v1.status.index import bp as status_v1_bp
 
