@@ -10,6 +10,9 @@ dependencies = [
     "ruff>=0.15.12",
 ]
 
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
 [tool.ruff]
 # Set the maximum line length to 79.
 line-length = 79
@@ -38,3 +41,9 @@ ignore = ["F401"]
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+    "pytest-watcher>=0.6.3",
+]

@@ -7,7 +7,19 @@
       "Bash(Select-Object FullName)",
       "Bash(mv /c/Users/DELL/OneDrive/Documentos/projetos/tabnews_python/pages/api/v1/status/.claude/settings.local.json /c/Users/DELL/OneDrive/Documentos/projetos/tabnews_python/.claude/settings.local.json)",
       "Bash(rm -rf /c/Users/DELL/OneDrive/Documentos/projetos/tabnews_python/pages/api/v1/status/.claude)",
-      "Bash(mkdir -p /c/Users/DELL/OneDrive/Documentos/projetos/tabnews_python/.claude)"
+      "Bash(mkdir -p /c/Users/DELL/OneDrive/Documentos/projetos/tabnews_python/.claude)",
+      "Bash(uv add *)",
+      "Bash(~/.local/bin/uv add *)",
+      "Read(//home/ismasantana/**)",
+      "Read(//usr/local/**)",
+      "Bash(pip3 show *)",
+      "Bash(pip3 install *)",
+      "Bash(python3 -m pip install pytest)",
+      "Bash(python3 -m pytest --version)",
+      "Bash(curl -LsSf https://astral.sh/uv/install.sh)",
+      "Bash(sh)",
+      "Bash(~/.local/bin/uv run *)",
+      "Bash(~/.local/bin/uv remove *)"
     ]
   }
 }
